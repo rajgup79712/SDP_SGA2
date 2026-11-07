@@ -1,0 +1,63 @@
+Git Commands Used During the Assignment
+1. git init
+Initializes a new Git repository in the current folder.
+
+2. git branch -M main
+Renames the current branch to main.
+
+3. git add .\index.html .\about.html
+Stages the index.html and about.html files so they can be included in the next commit.
+
+4. git commit -m "Added HTML project files"
+Creates a commit containing the staged HTML files with a descriptive message.
+
+5. git branch feature
+Creates a new branch named feature.
+
+6. git switch feature
+Switches the working directory to the feature branch.
+
+7. git add .\about.html
+Stages the modified about.html file for committing.
+
+8. git commit -m "about.html was modified in feature branch"
+Commits the changes made to about.html in the feature branch.
+
+9. git switch main
+Switches the working directory back to the main branch.
+
+10. git merge feature
+Merges the changes from the feature branch into the currently checked-out main branch.
+
+11. git log --oneline --graph --decorate --all
+Displays a compact commit history with branch names, commit information, and branch relationships.
+
+12. git status
+Displays the current state of the working directory, including modified, staged, and untracked files.
+
+13. git add .\.gitignore
+Stages the .gitignore file so it can be included in the next commit.
+
+14. git commit -m "Added Git ignore rules"
+Creates a commit containing the Git ignore rules.
+
+15. git add .\index.html
+Stages the modified index.html file for committing.
+
+16. git commit -m "Added temporary modification to index.html for revert demonstration"
+Creates a commit containing a temporary modification to demonstrate the Git revert operation.
+
+17. git revert --no-edit HEAD
+Creates a new commit that reverses the changes introduced by the latest commit without opening a commit message editor.
+
+18. git log --oneline --graph --all
+Displays the compact commit history in graphical form, including all branches.
+
+19. git remote add origin <URL removed>
+Adds a remote repository named origin and connects the local Git repository to the specified GitHub repository.
+
+20. git remote -v
+Displays the URLs of the configured remote repositories for fetching and pushing.
+
+21. git push -u origin main feature
+Pushes both the main and feature branches to the remote GitHub repository and sets up upstream tracking for both branches.
